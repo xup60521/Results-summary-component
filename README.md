@@ -11,7 +11,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
     -   [Built with](#built-with)
 
     -   [What I learned](#what-i-learned)
-    
+
         -   [GSAP animation](#gsap-animation)
 
 -   [Resources](#resources)
@@ -49,7 +49,7 @@ pnpm run build
 
 #### GSAP animation
 
-I used `gsap` to implement two animations. First is number increment, and the second is summary blocks entrance animation.
+I used `gsap` to implement two animations. First is number increment, and second is summary blocks entrance animation.
 
 Both are easy to do with this animation library. When setting up the result value, the only thing we need to do is call `gsap.to` function.
 
