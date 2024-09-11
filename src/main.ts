@@ -1,14 +1,13 @@
 import gsap from "gsap";
 
-const result = document.getElementById("result")!;
-const summaryBlocks = gsap.utils.toArray<HTMLDivElement>(".summary-block");
-
-gsap.to(result, {
+gsap.to("#result", {
     innerText: "76",
     duration: 1,
     ease: "power1.inOut",
     snap: { innerText: 1 },
 });
+
+const summaryBlocks = gsap.utils.toArray<HTMLDivElement>(".summary-block");
 
 summaryBlocks.forEach((summaryBlock, index) => {
     gsap.fromTo(summaryBlock, {
