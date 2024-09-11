@@ -9,13 +9,58 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body>
-    <main
-        class="w-full min-h-screen bg-gradient-to-r from-fuchsia-500 to-cyan-500 flex items-center justify-center">
-        <h1 class="font-mono font-bold text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Vite + Typescript + TailwindCSS + GitHub Pages
-        </h1>
-    </main>
+<body class="bg-white font-hanken_grotesk">
+    <div class="w-full min-h-screen flex justify-center items-center">
+        <main class="md:grid grid-cols-2 md:max-w-[36rem] flex flex-col bg-white overflow-hidden md:rounded-[1.5rem] shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
+            <!-- result panel -->
+            <div
+                class="w-full flex flex-col bg-gradient-to-b from-c_g_Light_slate_blue_background to-c_g_Light_royal_blue_background items-center py-6 gap-6 px-10 md:rounded-[1.5rem] rounded-b-[2rem]">
+                <h1 class="w-full text-center text-lg text-c_n_Light_lavender font-semibold">Your Result</h1>
+                <div class="rounded-full size-36 flex flex-col items-center justify-center bg-gradient-to-b from-c_g_Violet_blue_circle to-c_g_Persian_blue_circle">
+                    <span class="text-white font-extrabold text-[3rem]">76</span>
+                    <span class="text-xs text-c_n_Light_lavender -mt-2">of 100</span>
+                </div>
+                <div class="w-full flex flex-col items-center gap-3">
+                    <h2 class="font-bold text-white text-2xl">Great</h2>
+                    <p class="text-sm text-c_n_Light_lavender text-center">
+                        You scored higher than 65% of the people who have taken these tests.
+                    </p>
+                </div>
+            </div>
+            <!-- summary panel -->
+            <div class="w-full flex flex-col py-6 px-8 gap-6 justify-between">
+                <h3 class="text-c_n_Dark_gray_blue font-bold text-lg">Summary</h3>
+                <div class="w-full flex flex-col gap-3 text-sm">
+                    <div class="flex items-center py-[0.7rem] px-4 bg-c_p_Light_red text-c_p_Light_red bg-opacity-10 rounded-lg">
+                        <img src="/images/icon-reaction.svg" alt="reaction icon" class="h-4" />
+                        <span class="font-semibold pl-2">Reaction</span>
+                        <div class="flex-grow"></div>
+                        <p class="translate-y-[1px] text-slate-400 items-center flex gap-2"><span class="font-bold text-c_n_Dark_gray_blue">80</span> / 100</p>
+                    </div>
+                    <div class="flex items-center py-[0.7rem] px-4 bg-c_p_Orangey_yellow text-c_p_Orangey_yellow bg-opacity-10 rounded-lg">
+                        <img src="/images/icon-reaction.svg" alt="reaction icon" class="h-4" />
+                        <span class="font-semibold pl-2">Memory</span>
+                        <div class="flex-grow"></div>
+                        <p class="translate-y-[1px] text-slate-400 items-center flex gap-2"><span class="font-bold text-c_n_Dark_gray_blue">92</span> / 100</p>
+                    </div>
+                    <div class="flex items-center py-[0.7rem] px-4 bg-c_p_Green_teal text-c_p_Green_teal bg-opacity-10 rounded-lg">
+                        <img src="/images/icon-reaction.svg" alt="reaction icon" class="h-4" />
+                        <span class="font-semibold pl-2">Verbal</span>
+                        <div class="flex-grow"></div>
+                        <p class="translate-y-[1px] text-slate-400 items-center flex gap-2"><span class="font-bold text-c_n_Dark_gray_blue">61</span> / 100</p>
+                    </div>
+                    <div class="flex items-center py-[0.7rem] px-4 bg-c_p_Cobalt_blue text-c_p_Cobalt_blue bg-opacity-10 rounded-lg">
+                        <img src="/images/icon-reaction.svg" alt="reaction icon" class="h-4" />
+                        <span class="font-semibold pl-2">Visual</span>
+                        <div class="flex-grow"></div>
+                        <p class="translate-y-[1px] text-slate-400 items-center flex gap-2"><span class="font-bold text-c_n_Dark_gray_blue">72</span> / 100</p>
+                    </div>
+                    
+                </div>
+                <button class="rounded-full md:py-2 py-3 text-white font-bold bg-c_n_Dark_gray_blue">Continue</button>
+            </div>
+        </main>
+    </div>
     <script type="module" src="/src/main.ts"></script>
 </body>
 
